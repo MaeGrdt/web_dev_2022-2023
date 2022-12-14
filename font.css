@@ -1,0 +1,207 @@
+/*Fond de Page*/
+body{
+	background-color: #FAF4CA
+}
+
+/*Bannière*/
+header{
+	width:98.5%;
+	vertical-align: center;
+	border:10px solid #CCC;
+	border-radius:10px;
+	margin:auto;	
+}
+
+#banniere{
+	background-image: url("banner-kawaii-cats-loving-mini-hearts.png");
+	height: 15vw;
+	width:97.3vw;
+	margin: auto;
+}
+
+/*Liste de bouton*/
+nav{
+	padding:0; margin:0; /*espace entre la marge du haut et le menu*/
+	text-align: center; /*centrer le texte*/
+}
+
+nav li{
+	display: inline;
+	/*list-style: none; /*nécessaire pour IE7*/
+}
+
+/*Edit bouton*/
+nav a{
+	display: inline-block;
+	margin: 0 40 3 40px;
+	background: #FFA8A8; /*couleur de fond*/
+	width: 14vw;
+	text-decoration: underline; /*pas d'héritage avec effet souligné*/
+	color: #FAF4CA;
+	height: 1.7vw; /*hauteur du bouton*/
+	line-height: 3 50 3 50px; /*interligne*/
+	padding: 1 50px; /*marges intérieur*/
+	font-family: Carter One; /*police d'écriture*/
+	font-size: 1.25vw; /*taille d'écriture*/
+}
+
+nav a:hover:first-child{
+	background: #FAF4C1;
+	color: #FFA8A8;
+}
+
+/*Grand Titre*/
+h1{
+	color: #EE9DFA;
+	font-size: 3.5vw;
+	text-align: center;
+}
+
+/*Sous-Titre*/
+h2{
+	color: #9FB4FF;
+	font-size: 1.8vw;
+	text-align: center;
+}
+
+/*Texte*/
+p{
+	color: #FFA8A8;
+	font-size: 1.3vw;
+	text-align: center;
+	font-style: italic;
+}
+
+/* from (tableau de contact) */
+fieldset{
+	margin: auto;
+	width: 50vw;
+	color: #EE9DFA;
+	border-radius: 2vw;
+	border-color: #EE9DFA;
+	border-style:double;
+}
+
+label{
+	color: #FFA8A8;
+}
+
+#submit{
+	padding:0; margin:0;
+	text-align: center;
+}
+
+input{
+	text-decoration-color: #EE9DFA;
+	border-radius: 1%;
+	border-color: #EE9DFA;
+}
+
+select{
+	text-decoration-color: #EE9DFA;
+	border: 1%;
+	border-color: #EE9DFA;
+}
+
+em{
+	color: red;
+}
+
+textarea{
+	width: 49.5vw;
+	height: 5vw;
+	border: 1%;
+	border-color: #EE9DFA;
+}
+
+/* Slider */
+#slider {
+	position: relative;
+	width: 50vw;
+	height: 26vw;
+	overflow: hidden;
+	box-shadow: 0 0 30vw rgba(0, 0, 0, 0.3);
+	margin: auto;
+  }
+
+  #slider ul {
+	position: relative;
+	list-style: none;
+	height: 100%;
+	width: 10000%;
+	padding: 0;
+	margin: 0;
+	transition: all 750ms ease;
+	left: 0;
+	margin: auto;
+  }
+  #slider ul li {
+	position: relative;
+	height: 100%;
+	float: left;
+	margin: auto;
+  }
+
+  #slider ul li img{
+	width: 50vw;
+	height: 26vw;
+	margin: auto;
+  }
+   
+  #slider #prev, #slider #next {
+	width: 5vw;
+	line-height: 5vw;
+	border-radius: 50%;
+	font-size: 2rem;
+	text-shadow: 0 0 2vw rgba(0, 0, 0, 0.6);
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 150ms ease;
+  }
+
+  #slider #prev:hover, #slider #next:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	text-shadow: 0;
+  }
+
+  #slider #prev {
+	left: 1vw;
+  }
+
+  #slider #next {
+	right: 1vw;
+  }
+
+table{
+	border: ridge 0.5vw;
+	border-color: #EE9DFA;
+	margin:auto;
+	height: 2vw;
+	border-collapse: collapse;
+}
+
+th{
+	color: #EE9DFA;
+	text-align: center;
+	height: 2vw;
+	border: double 0.01vw #EE9DFA;
+
+}
+
+td{
+	color:#FFA8A8;
+	text-align: center;
+	height: 2vw;
+	border: double 0.01vw #EE9DFA;	
+}
+
+#fusion{
+	color:#FAF4C1;
+	text-align: center;
+	height: 2vw;
+	background-color:#FFA8A8;
+}

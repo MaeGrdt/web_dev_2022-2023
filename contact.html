@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+	<!--Entête du site-->
+	<head>
+		<title>Contact</title>
+		
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" href="font.css">
+	
+	</head>
+	
+	<!--Corps du site-->
+	<body>
+		
+		<!--Bannière-->
+		<header>
+			<div id="banniere"></div>
+		</header>
+		
+		<!--liste de bouton-->
+		<nav> 
+			<div id="menu">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="presentation_CV.html">Présentation</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			</div>
+		</nav>
+		
+		<!--Titres + Textes-->
+		<h1> ~ Contacts ~ </h1>
+		
+			<p>Voici où vous pouvez me contacter:</p>
+		
+		<!--Formulaire de contacts-->		
+		<form action="#">
+			<!--<i> en italic </i>-->
+			<!--<em> retour a la normale </em>-->
+			<p>Merci de compléter ce formulaire, les champs avec un <em>*</em> sont <em>obligatoire</em>.</p>
+			<fieldset>
+				<legend>Contact</legend>
+					<label for="nom">Nom<em>*</em>:</label>
+					<input id="nom" placeholder="Nom" type="text" autofocus="autofocus" required="" minlength="2" maxlength="25" autocomplete="" name="Nom">
+					<br><br>
+					<label for="prenom">Prénom<em>*</em>:</label>
+					<input id="prenom" placeholder="Prénom" type="text" autofocus="autofocus" required="" minlength="2" maxlength="25" autocomplete="" name="Prenom">
+					<br><br>
+					<label for="telephone">Numéro de Téléphone<em>*</em>:</label>
+					<input id="telephone" type="tel" placeholder="0xxxxxxxxx" pattern="[0-9]{10}">
+					<!--//type="tel": bascule le clavier sur smartphone
+					//pattern: expression régulière à vérifier pour pouvoir valider-->
+					<br><br>
+					<label for="email">Email<em>*</em>:</label>
+					<input type="email" id="email" name="email" required="" placeholder="email">
+			</fieldset>
+			
+			<br>
+			
+			<fieldset>
+				<legend>Informations Personnelles</legend>
+				<div>
+				<label for="femme"><input class="Civ" type="Radio" required="" name="Civ" value="">Femme</label>
+				<label for="homme"><input class="Civ" type="Radio" required="" name="Civ" value="">Homme</label>
+				<label for="autre"><input class="Civ" type="Radio" required="" name="Civ" value="">Autre</label>
+				</div>
+					<br>
+					<label for="age">Age <em>*</em>:</label>
+					<input id="age" placeholder="Age" type="number" name="age" autofocus="autofocus" min="16" max="99" required="">
+					<br>
+					<div class="champ">
+						<label for="pays">Pays de Résidence <em>*</em>:</label>
+						<select id="pays" name="pays" required="">
+								<option value="choix">Choisissez votre pays</option>
+								<option value="algérie">Algérie</option>
+								<option value="amérique">Amérique</option>
+								<option value="belgique">Belgique</option>
+								<option value="benin">Benin</option>
+								<option value="bresil">Brésil</option>
+								<option value="canada">Canada</option>
+								<option value="espagne">Espagne</option>
+								<option value="france">France</option>
+								<option value="madagascar">Madagascar</option>
+								<option value="maroc">Maroc</option>
+								<option value="Mexique">Mexique</option>
+								<option value="suisse">Suisse</option>
+								<option value="Togo">Togo</option>
+								<option value="tunisie">Tunisie</option>
+						</select>
+					</div>
+			</fieldset>
+			
+			<br>
+
+			<fieldset>
+				<legend>Pourquoi voulez-vous me contacter?</legend>
+					<textarea id="comments" type="text" name="comments" placeholder="Ecrivez votre texte en 250 caractères maximum." maxlength="250"></textarea>
+					
+			</fieldset>
+			<br>
+			<div id="submit" class="submit">
+			<input type="submit" value="Envoyer">
+			</div>
+		</form>	
+	</body>
+</html>
